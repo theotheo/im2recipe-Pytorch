@@ -58,7 +58,7 @@ class ImagerLoader(data.Dataset):
         elif self.partition == 'val' or self.partition == 'test':
             match = True
         else:
-            raise 'Partition name not well defined'
+            raise Exception('Partition name not well defined')
 
         target = match and 1 or -1
 
